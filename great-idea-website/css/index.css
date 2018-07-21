@@ -49,6 +49,7 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -58,9 +59,208 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
+    font-family: 'Covered By Your Grace', cursive;
     letter-spacing: 1px;
     margin-bottom: 15px;
+    font-size: 24px
 }
 
 /* Your code starts here! */
+.container{
+    width: 875px;
+    margin: auto;
+}
+
+nav{
+	display: inline-block;
+	width: 875px;
+    position: fixed;
+    z-index: 999;
+    
+}
+
+nav a{
+	padding: 25px;
+	text-align: center;
+    float: left;
+    text-decoration: none;
+    background: #000;
+    color: #fff
+}
+
+nav a:last-child, nav a:last-child:hover{
+    padding-left: 50px;
+    padding-top: 30px;
+    float: left;
+    vertical-align: bottom;
+    z-index: 9999;
+    background: #fff;
+    height: 66px;
+    width: 250px;
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+nav a:hover{
+    background: #fff;
+    color: #000;
+    -webkit-transition: color 2s;
+    transition: color 2s;
+    -webkit-transition: background 1s;
+    transition: background 1s;
+}
+
+header{
+    position: relative;
+    height: 550px;
+    padding-top: 120px;   
+    
+}
+
+header h1{
+    font-size: 75px;
+    font-weight: bold;
+    float: left;
+    text-align: center;
+    margin: 50px 70px;
+    display: inline-block;
+}
+
+button{
+    position: absolute;
+    top: 415px;
+    left: 130px;
+    font-size: 17px;
+    width: 175px;
+    height: 35px;
+    background: transparent;
+    border: 1px solid black;
+}
+
+button:hover{
+    background: #000;
+    color:#fff;
+    -webkit-transition: background 1s;
+    transition: background 1s;
+}
+
+#header-img{
+    float: left;
+    margin-left: px;
+    height: 350px;
+    width: 350px;
+    background-image: url(../img/header-img.png);
+    background-size: contain
+}
+
+#top-section{
+    
+    clear: both;
+    border-top: 1px solid black;
+    padding-top: 50px
+    
+}
+
+.top-content{
+    float: left;
+    width: 425px;
+    text-align: justify;
+    margin-right: 12px;
+    margin-bottom: 40px;
+    
+}
+
+.middle-img{
+    width: 100%;
+    margin-top: 150px;
+    margin-bottom: 40px;
+    height: 200px;
+    background-image: url(../img/mid-page-accent.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bottom-content{
+   float: left;
+    width: 280px;
+    text-align: justify;
+    margin-right: 11px;
+    margin-bottom: 45px; 
+}
+
+#bottom-section{
+    height: 170px;
+    border-bottom: 1px solid black;
+}
+
+#contact{
+    margin-top: 40px;
+}
+
+#contact a{
+    text-decoration: none;
+}
+
+footer{
+    margin: 40px;
+     text-align: center;   
+}
+
+label{
+    margin-top: 40px;
+    display: inline-block;
+    font-size: 20px;
+    
+}
+
+input{
+    width: 100%;
+}
+
+form{
+    position: relative;
+    margin-bottom: 100px;
+}
+
+ button[type='submit']{
+    position: absolute;
+    top: 500px;
+    left: 1px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
